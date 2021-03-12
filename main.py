@@ -69,8 +69,8 @@ def upper_camel_to_snake(upper_camel):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path = input('ディレクトリの絶対パスは?')
+    path = input('親ディレクトリの絶対パスは?')
     screenName = input('スクリーンの名前は?（アッパーキャメル、Screenは入れない）例) HogeHogeScreenならHogeHoge')
-    create_screen(path, screenName)
+    create_screen(path, upper_camel_to_snake(screenName))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
